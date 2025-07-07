@@ -1,0 +1,139 @@
+/* Container styles */
+.task-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.task-container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* New Task Button */
+.task-container button {
+  background-color: #f7e8a3;
+  border: 1px solid #ddd;
+  padding: 8px 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Table styles */
+.task-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.task-container th,
+.task-container td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.task-container th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+/* Highlight user link */
+.task-container td:first-child {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Action buttons */
+.task-container .action-btn {
+  margin-right: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+.task-container .edit-btn {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.task-container .delete-btn {
+  background-color: #ffeeba;
+  color: #000;
+}
+
+/* Pagination and bottom controls */
+.task-container .pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.task-container .pagination select,
+.task-container .pagination button {
+  padding: 4px 8px;
+  margin-left: 5px;
+}
+
+/* Dropdown menu styling (if needed for Edit/Delete) */
+.task-container .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.task-container .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff9e6;
+  min-width: 100px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.task-container .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.task-container .dropdown-content button {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.task-container .dropdown-content button:hover {
+  background-color: #fff0b3;
+}
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-search {
+  margin: 12px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task-search input {
+  padding: 8px 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.record-count {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}

@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "0c3e22fa-25b6-4fb2-894f-0d9a15a1ab23",
+		"name": "EnZigma Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39255980"
+	},
+	"item": [
+		{
+			"name": "http://192.168.150.20:3000/api/task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"user5\",\n        \"status\": \"inprogress\",\n        \"due_date\": \"2025-04-29\",\n        \"priority\": \"high\",\n        \"comments\": \"none\",\n        \"userid\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.150.20:3000/api/task",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"150",
+						"20"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.150.20:3000/api/tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.150.20:3000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"150",
+						"20"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.150.20:3000/api/task/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.150.20:3000/api/task/5",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"150",
+						"20"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"task",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.150.20:3000/api/task/5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.150.20:3000/api/task/5",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"150",
+						"20"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"task",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

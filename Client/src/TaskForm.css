@@ -1,0 +1,88 @@
+/* Centered Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Content Box */
+.modal-content {
+  background-color: #fff;
+  width: 600px;
+  padding: 24px 30px;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+/* Form Group Layout */
+.modal-content form > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.modal-content label {
+  flex: 1;
+  margin-right: 10px;
+  font-weight: 500;
+  color: #444;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  flex: 2;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* Footer Buttons */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Cancel and Save Button Colors */
+.modal-actions button[type="button"] {
+  background-color: #f7e8a3;
+  color: #444;
+}
+
+.modal-actions button[type="submit"] {
+  background-color: #7a7f6b;
+  color: white;
+}
